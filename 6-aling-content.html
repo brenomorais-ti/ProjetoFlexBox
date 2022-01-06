@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aling-content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;      
+        }
+
+        .item{
+            background-color: red;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h3>Stretch</h3>
+    <div class="container stretch">
+        <div class="item">cdfwfwf wefe wfwefwfwef  fwfwefwefwef</div>
+        <div class="item">cdfwfwfwef ewfwefwfwef vwfwfwefwe fwfwefwefwef cdfwfwfwefewfwefwfwef vwfwfwefwe fwfwefwefwef</div>
+        <div class="item">cdfwf wfw efew fwefwfwef  fwfwefwefwef</div>
+        <div class="item">cdfwfwfwefewf wefwfw ef fwfwefwefwef</div>
+        <div class="item">cdfw fwfwefew fwefwf wef fwfwefwe fwef</div>
+    </div>
+
+    <h3>Center</h3>
+    <div class="container center"> 
+        <div class="item">cdfwfwfwef ewfwef wfwef</div>
+        <div class="item">cdfwfwfwefewfwe fwfwef vwfwfwe fwfwefewfwefwfwef vwfwfwefwe fwfwefwefwef</div>
+        <div class="item">cdfwfwfwef ewfw fwfwef</div>
+        <div class="item">cdfwfwfwef fwfwefwefwef</div>
+        <div class="item">cdfwfwfwefew fwefwef</div>
+    </div>
+
+    <h3>Flex-start</h3>
+    <div class="container flex-start">
+        <div class="item">cdfwfw fwef fwfwe fwefwef</div>
+        <div class="item">cdfwfwfwefewef vwfwfwefwe fwfwefwefwef</div>
+        <div class="item">cdfwfwfw efew fwfwefwefwef</div>
+        <div class="item">c dfwfw fwe f</div>
+        <div class="item">cdfwfw fwef ewfwf fwfwefwefwef</div>
+    </div>
+
+    <h3>Flex-end</h3>
+    <div class="container flex-end">
+        <div class="item">cdfwfw fwef fwfwe fwefwef</div>
+        <div class="item">cdfwfwfwefewef vwfwfwefwe fwfwefwefwef</div>
+        <div class="item">cdfwfwfw efew fwfwefwefwef</div>
+        <div class="item">c dfwfw fwe f</div>
+        <div class="item">cdfwfw fwef ewfwf fwfwefwefwef</div>
+    </div>
+
+    <h3>Space-around</h3>
+    <div class="container space-around">
+        <div class="item">cdfwfw fwef fwfwe fwefwef</div>
+        <div class="item">cdfwfwfwefewef vwfwfwefwe fwfwefwefwef</div>
+        <div class="item">cdfwfwfw efew fwfwefwefwef</div>
+        <div class="item">c dfwfw fwe f</div>
+        <div class="item">cdfwfw fwef ewfwf fwfwefwefwef</div>
+    </div>
+
+    <h3>Space-between</h3>
+    <div class="container Space-between">
+        <div class="item">cdfwfw fwef fwfwe fwefwef</div>
+        <div class="item">cdfwfwfwefewef vwfwfwefwe fwfwefwefwef</div>
+        <div class="item">cdfwfwfw efew fwfwefwefwef</div>
+        <div class="item">c dfwfw fwe f</div>
+        <div class="item">cdfwfw fwef ewfwf fwfwefwefwef</div>
+    </div>
+</body>
+</html>
